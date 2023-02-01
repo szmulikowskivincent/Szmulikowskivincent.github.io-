@@ -1,0 +1,208 @@
+<!DOCTYPE html lan "ang">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+  <head>
+    <title>Connexion</title>
+    <link rel="stylesheet" href="css/css.css" />
+    <link rel="stylesheet" href="css/progress.css" />
+    <link rel="stylesheet" href="css/img-avatar.css" />
+  </head>
+
+<!--Fond écrand paage index-->
+<style>
+  body {background-image: 
+  url("images/fond-écrand/design-fond-abstrait-blanc_574815-20.avif");
+  background-color: rgb(180, 175, 175);
+  background-color: rgb(255, 255, 255);
+  }             
+</style>
+
+<header>
+    <!--Zone avatar-->
+<!-- <div>
+    <section>
+      <img
+        src="images/about-img.png" 
+        alt="Avatar"
+        class="img-avatar"
+        height="110px"
+        width="110px"
+      />
+    </section>
+  </div>-->
+
+<!--button ("+")-->
+<!--<form method="post" url="/upload-picture" enctype="multipart/form-data">
+  <input
+    id="file" 
+    name="file" 
+    style="display:none"
+    type="file"
+    name="picture"
+    onchange="previewPicture(this)"
+    required
+  />
+  <button style="background-color:rgb(200, 204, 204)" class="input" onclick="file.click()">+</button>
+</form>
+
+&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;&#160;&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;<img
+    src="#"
+    alt="Avatar"
+    id="image"
+    class="img-avatar"
+    accept="image/png, image/jpeg"
+  />-->
+
+  <script language="JavaScript" src="js/button-ajouter.js"></script>
+ </header>
+
+  <body>
+    <!--formulaire-->
+    <form name="login">
+      <table align="center" width="380" border="2" cellpadding="3">
+        <tr>
+          <td align="center" colspan="4">
+            <font style="color: rgb(0, 0, 0)" size="+2"
+              ><b>Admin</b></font
+            >
+          </td>
+        </tr>
+        <tr>
+          <td style="color:rgb(0, 0, 0)">nom:</td>
+          <td>
+            <input
+              type="text"
+              name="username"
+              required="required"
+              *ngIf="name.errors?.['required'] && name.dirty"
+            />
+          </td>
+        </tr>
+        <br />
+        <tr>
+          <td  style="color:rgb(0, 0, 0)">prénom:</td>
+          <td>
+            <input
+              type="text"
+              name="userlastname"
+              required="required"
+              *ngIf="firstname.errors?.['required'] && firstname.dirty"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td  style="color:rgb(0, 0, 0)">adresse email:</td>
+          <td>
+            <input
+              type="text"
+              name="useremail"
+              required="required"
+              *ngIf="email.errors?.['required'] && email.dirty"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td  style="color:rgb(0, 0, 0)">mot de passe:</td>
+          <td>
+            <input
+              type="PASSWORD"
+              name="password"
+              required="required"
+              pattern="[a-z]{4,12}"
+              *ngIf="password.errors?.['required'] && password.dirty"
+              onclick="abc(password)"
+            />
+            <script language="JavaScript" src="js/Progress.js"></script>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color:rgb(230, 233, 238)" colspan="2" align="center">
+            <input style="color:rgb(245, 12, 12)" type="reset" value="Clear" />
+            <input style="color:rgb(53, 235, 17)" type="button" value="Send" onClick="Login()" />
+          </td>
+        </tr>
+      </table>
+
+    <p align="center" style="color: rgb(245, 10, 10)">
+      Entrez votre adresse email et votre mot de passe!
+      <br><br>
+    <button>
+      <a align="center" style="color:blueviolet" href="file:///C:/Users/szmul/Desktop/Site%20web%20Florence/picstudio-html/picstudio-html/index.html" type="button" value="Send"> Cancel </a>
+    </button>
+    </p>
+
+    <!--Ajouter photo page voyage"canva"-->
+    <div>
+      <section>
+       <p align="center" style="color: rgb(0, 0, 0)">
+          © 2023, Ma page voyage ❙❙ Florence Protin&#160;&nbsp;&#160;&nbsp;&nbsp;
+          <button style="background-color:greenyellow">
+            <a
+              align=""
+              style="color: rgb(82, 81, 81)"
+              class=""
+              href="https://www.canva.com/design/DAFZQQEGXv0/ffWUjxRu6YU2BWlFi5W9EQ/edit"
+              target="_blank"
+              >Ajouter une photo</a
+            >
+          </button>
+          <p align="center" style="color: rgb(0, 0, 0)">
+            © 2023, Ma page paysage ❙❙ Florence Protin&#160;&nbsp;&#160;
+            <button style="background-color:greenyellow">
+              <a
+                align=""
+                style="color: rgb(82, 81, 81)"
+                class=""
+                href="https://www.canva.com/design/DAFZUl4yeT0/xYDwntdSZCigF20w5Eu2OQ/edit"
+                target="_blank"
+                >Ajouter une photo</a
+              >
+            </button>
+            <p align="center" style="color: rgb(0, 0, 0)">
+              © 2023, Ma page culture ❙❙ Florence Protin&#160;&nbsp;&#160;&nbsp;&nbsp;
+              <button style="background-color:greenyellow">
+                <a
+                  align=""
+                  style="color:rgb(82, 81, 81)"
+                  class=""
+                  href="https://www.canva.com/design/DAFZQU_GVHc/5WNoOf8d1LzfieudP6dlFw/edit"
+                  target="_blank"
+                  >Ajouter une photo</a
+                >
+              </button>
+              <p align="center" style="color: rgb(0, 0, 0)">
+                  © 2023, Ma page portrait ❙❙ Florence Protin&#160;&nbsp;&#160;&nbsp;&nbsp;
+                  <button style="background-color:greenyellow">
+                <a
+                  align=""
+                  style="color:rgb(82, 81, 81)"
+                  class=""
+                  href="https://www.canva.com/design/DAFZUqMTNSk/Hb5qP7RYmWR_eHtmU6oXcg/edit"
+                  target="_blank"
+                  >Ajouter une photo</a
+                >
+              </button>
+        </p>
+      </section>
+    </div>
+  
+    <progress
+      id="progress-javascript-example"
+      min="1"
+      max="100"
+    ></progress>
+
+    <script language="JavaScript" src="js/ConsoleAdmin.js"></script>
+    <script language="JavaScript" src="js/function hashPassword(password).js"></script>
+    <!--<script src='https://html5-chat.com/script/webmasterid/token'></script><!--script tchat en ligne-->
+    <script language="JavaScript" src="js/Progress.js"></script>
+  </body>
+  <br /><br /> <br /> <br /><br /> <br /><br /><br /><br /><br />
+  <footer>
+    <p align="center" style="color:rgb(82, 81, 81);">
+      © 2023, Ma console Admin ❙❙ Florence Protin
+    </p>
+  </footer>
+</html>
